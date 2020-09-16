@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gran DT</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="./img/pelota.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <h1 id="titulo"><img src="img/la-liga.png" id="imagen-la-liga"> Gran DT</h1>
+    <div class="container" id="escudos">
+        <div class="row">
+            <h1 class="col-4">
+                <img src="./img/barcelona.png" id="imagen-barcelona">
+            </h1>
+            <h1 class="col-4">
+                <img src="./img/real-madrid.png" id="imagen-real-madrid">
+            </h1>
+            <h1 class="col-4">
+                <img src="./img/atletico-madrid.png" id="imagen-atletico-madrid">
+            </h1>
+        </div>
+    </div>
+        <label id="formaciones">Formaciones</label>
+        
+        <select name="formaciones" id="selector-formaciones">
+            <option>4-3-3</option>
+            <option>4-4-2</option>
+            <option>4-5-1</option>
+            <option>5-4-1</option>
+            <option>3-5-2</option>
+        </select>
+
+    <div class="container" id="contenedor">
+        <div id="contenedor-presupuesto">
+            <label id="presupuesto"><strong id="texto-presupuesto">Presupuesto</strong><p id="dinero">65000000</p></label>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="list-group" id="lista-jugadores">
+
+            </div>
+          </div>
+            <div class="col-8">
+                <div class="card" style="width: 20rem;" id="contenedor-cancha">
+                    <img src="./img/cancha.jpg"  class="rounded mx-auto d-block" alt="cancha" id="imagen-cancha">
+                    <img src="./img/silueta.gif" class="silueta" alt="del" id="formacion1-del-centro">
+                    <img src="./img/silueta.gif" class="silueta" alt="del" id="formacion1-del-derecho">
+                    <img src="./img/silueta.gif" class="silueta" alt="del" id="formacion1-del-izquierdo">
+                    <img src="./img/silueta.gif" class="silueta" alt="med" id="formacion1-med-centro">
+                    <img src="./img/silueta.gif" class="silueta" alt="med" id="formacion1-med-derecho">
+                    <img src="./img/silueta.gif" class="silueta" alt="med" id="formacion1-med-izquierdo">
+                    <img src="./img/silueta.gif" class="silueta" alt="def" id="formacion1-def-derecho">
+                    <img src="./img/silueta.gif" class="silueta" alt="def" id="formacion1-def-izquierdo">
+                    <img src="./img/silueta.gif" class="silueta" alt="def" id="formacion1-def-central-derecho">
+                    <img src="./img/silueta.gif" class="silueta" alt="def" id="formacion1-def-central-izquierdo">
+                    <img src="./img/silueta.gif" class="silueta" alt="arq" id="formacion1-arq">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src='src/main.js'></script>
+</body>
+</html>
