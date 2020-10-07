@@ -24,6 +24,7 @@ h1{
 
 #contenedor-cancha{
     background-image: url(img/cesped.jpg);
+    width: 20rem;
 }
 
 #imagen-cancha{

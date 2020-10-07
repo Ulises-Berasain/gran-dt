@@ -24,17 +24,31 @@ context("Gran DT",()=>{
             cy.get("#jugadores").click();
             cy.get("#contenedor-cancha").find("#formacion1-del-centro").should("have.class", "Lionel Messi");
             cy.get("#jugadores-seleccionados").should("have.class","list-group-item list-group-item-action disabled" );
-            cy.get("#dinero").should("have.text", 50000000);
+            cy.get("#cantidad-presupuesto").should("have.text", 50000000);
         });
 
         it("Se asegura que se pueda cambiar de formacion y aparezca todo correctamente",() =>{
+            cy.get("#selector-formaciones").select("4-5-1");
+            cy.get("#contenedor-cancha").find("img").should("have.length", JUGADORES_CANCHA);
+            cy.get("#lista-jugadores").find("a").should("have.length", NUMERO_JUGADORES_LISTA);
+            cy.get("#selector-formaciones").select("5-4-1");
+            cy.get("#contenedor-cancha").find("img").should("have.length", JUGADORES_CANCHA);
+            cy.get("#lista-jugadores").find("a").should("have.length", NUMERO_JUGADORES_LISTA);
+            cy.get("#selector-formaciones").select("3-5-2");
+            cy.get("#contenedor-cancha").find("img").should("have.length", JUGADORES_CANCHA);
+            cy.get("#lista-jugadores").find("a").should("have.length", NUMERO_JUGADORES_LISTA);
+            cy.get("#selector-formaciones").select("4-3-3");
+            cy.get("#contenedor-cancha").find("img").should("have.length", JUGADORES_CANCHA);
+            cy.get("#lista-jugadores").find("a").should("have.length", NUMERO_JUGADORES_LISTA);
             cy.get("#selector-formaciones").select("4-4-2");
-            cy.get("#dinero").should("have.text", 65000000);
+            cy.get("#contenedor-cancha").find("img").should("have.length", JUGADORES_CANCHA);
+            cy.get("#lista-jugadores").find("a").should("have.length", NUMERO_JUGADORES_LISTA);
+            cy.get("#cantidad-presupuesto").should("have.text", 65000000);
             cy.get("#jugadores").should("have.class","list-group-item list-group-item-action");
             cy.get("#jugadores").click();
             cy.get("#contenedor-cancha").find("#formacion2-del-centro-derecho").should("have.class", "Lionel Messi");
             cy.get("#jugadores-seleccionados").should("have.class","list-group-item list-group-item-action disabled" );
-            cy.get("#dinero").should("have.text", 50000000);
+            cy.get("#cantidad-presupuesto").should("have.text", 50000000);
         });
 
         it("Se asegura que al pasarte del presupuesto aparezca el boton de reinicio, se vuelva el cartel rojo y aparezca el texto indicado", ()=>{
@@ -45,7 +59,7 @@ context("Gran DT",()=>{
             cy.contains("Luka Modric").click();
             cy.contains("Sergio Ramos").click();
             cy.contains("Raphael Varane").click();
-            cy.get("#dinero").should("have.text", "Te pasaste del presupuesto, empieza de nuevo!");
+            cy.get("#cantidad-presupuesto").should("have.text", "Te pasaste del presupuesto, empieza de nuevo!");
             cy.get(".presupuesto").should("have.id", "error");
             cy.get("#texto-presupuesto").should("have.text", "");
             cy.get("#boton-reinicio").click();

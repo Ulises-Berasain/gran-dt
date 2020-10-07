@@ -18,22 +18,21 @@ export const $contenedorCancha = document.getElementById("contenedor-cancha");
 export function cambiarFormacion(){
     document.getElementById("selector-formaciones").addEventListener("change",
       ()=>{ 
-  
           const $links = document.querySelectorAll("a");
           $links.forEach((link)=>{
               link.className = "list-group-item list-group-item-action";
               link.setAttribute("id", "jugadores");
           });
   
-          const $dinero = document.getElementById("dinero");
+          const $presupuesto = document.getElementById("cantidad-presupuesto");
           const $textoPresupuesto = document.getElementById("texto-presupuesto");
   
-          if($dinero.innerText === "Te pasaste del presupuesto, empieza de nuevo!" ){
+          if($presupuesto.innerText === "Te pasaste del presupuesto, empieza de nuevo!" ){
               const $presupuesto = document.getElementById("error");
               $presupuesto.setAttribute("id", "presupuesto");
           };
           $contenedorCancha.innerHTML = "";
-          $dinero.innerHTML = 65000000;
+          $presupuesto.innerHTML = 65000000;
           $textoPresupuesto.innerHTML = "Presupuesto";
   
           $cancha.setAttribute("src", "./img/cancha.jpg");
@@ -49,8 +48,7 @@ export function cambiarFormacion(){
           $contenedorCancha.appendChild($cancha);
           $contenedorCancha.appendChild($arquero);
           agregarJugadorEnLaCancha(jugadores);
-          
-    });
+        });
 };
 
 export function saberPosicion(formacion, jugador){
