@@ -1,4 +1,4 @@
-import { reiniciarGranDt } from "/src/ui/main.js"
+import { reiniciarGranDt } from "../ui/main.js"
 import { saberPosicion, $contenedorCancha } from "./formaciones.js"
 
 const $presupuesto = document.getElementById("cantidad-presupuesto");

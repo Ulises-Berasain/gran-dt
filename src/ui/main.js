@@ -1,8 +1,8 @@
 /// <reference types="jquery"/>
 
-import { cargarJugadores } from "/src/api/api.js";
-import { cambiarFormacion } from "/src/servicio/formaciones.js";
-import { mostrarListaJugadores } from "/src/servicio/jugadores.js";
+import { cargarJugadores } from "../api/api.js";
+import { cambiarFormacion } from "../servicio/formaciones.js";
+import { mostrarListaJugadores } from "../servicio/jugadores.js";
 
 export function reiniciarGranDt(){
     document.querySelector("#boton-reinicio").addEventListener("click",() =>{
