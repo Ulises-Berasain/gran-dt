@@ -1,4 +1,4 @@
-import { crearJugadores, agregarSilueta, agregarJugadorEnLaCancha } from "./jugadores.js"
+import { crearJugadores, agregarSilueta, agregarJugadorEnLaCancha, crearListaTitularSuplente, $formaciones } from "./jugadores.js"
 
 const $cancha = document.createElement("img");
 const $arquero = document.createElement("img");
@@ -18,21 +18,30 @@ export const $contenedorCancha = document.getElementById("contenedor-cancha");
 export function cambiarFormacion(){
     document.getElementById("selector-formaciones").addEventListener("change",
       ()=>{ 
-          const $links = document.querySelectorAll("a");
-          $links.forEach((link)=>{
-              link.className = "list-group-item list-group-item-action";
-              link.setAttribute("id", "jugadores");
+          document.querySelectorAll(".boton-eliminar-deshabilitado").forEach((boton)=>boton.className="boton-eliminar");
+          crearListaTitularSuplente($formaciones.value);
+          const $jugadoresSeleccionados = document.querySelectorAll("#jugadores-seleccionados");
+          $jugadoresSeleccionados.forEach((seleccionados)=>{
+              seleccionados.className = "list-group-item list-group-item-action";
+              seleccionados.setAttribute("id", "jugadores");
+            });
+            
+          const $jugadores = document.querySelectorAll("#jugadores");
+          $jugadores.forEach((jugador)=>{
+            jugador.className = "list-group-item list-group-item-action";
           });
-  
+
           const $presupuesto = document.getElementById("cantidad-presupuesto");
           const $textoPresupuesto = document.getElementById("texto-presupuesto");
-  
+
           if($presupuesto.innerText === "Te pasaste del presupuesto, empieza de nuevo!" ){
               const $presupuesto = document.getElementById("error");
               $presupuesto.setAttribute("id", "presupuesto");
-          };
+              const $botonReinicio = document.querySelector("#boton-reinicio");
+              $botonReinicio.remove();
+            };
           $contenedorCancha.innerHTML = "";
-          $presupuesto.innerHTML = 65000000;
+          $presupuesto.innerHTML = 80000000;
           $textoPresupuesto.innerHTML = "Presupuesto";
   
           $cancha.setAttribute("src", "./img/cancha.jpg");
@@ -213,3 +222,5 @@ export function saberPosicion(formacion, jugador){
       }
   }
 };        
+
+

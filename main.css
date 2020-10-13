@@ -20,6 +20,7 @@ h1{
 
 #jugadores:hover{
     background-color: yellowgreen;
+    cursor: pointer;
 }
 
 #contenedor-cancha{
@@ -531,4 +532,180 @@ h1{
     color: white;
     border: solid 1px black;
     background-color: red;
+}
+
+#contenedor-listas{
+    display:flex;
+}
+
+#contenedor{
+    float: left;
+}
+
+#titular1{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular2{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular3{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular4{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;;
+}
+
+#titular5{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular6{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular7{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular8{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular9{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular10{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular11{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#suplente1{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#suplente2{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#suplente3{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#suplente4{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#suplente5{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titulares{
+    color: white;
+    background: rgb(17, 91, 17);
+    font-weight: 700;
+    border: solid 3px black;
+    text-align: center;
+}
+
+#suplentes{
+    margin-top: 5%;
+    color: white;
+    background: rgb(17, 91, 17);
+    font-weight: 700;
+    border: solid 3px black;
+    text-align: center;
+}
+
+.boton-eliminar{
+    float: left;
+    background: black;
+    color: white;
+}
+
+.boton-eliminar-deshabilitado{
+    display: none;
+}
+
+#badge-del{
+    background: crimson;
+    border:solid 1px black;
+    float: right;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+
+#badge-med{
+    background: aqua;
+    border:solid 1px black;
+    float: right;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+
+#badge-def{
+    background: greenyellow;
+    border:solid 1px black;
+    float: right;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+
+#badge-arq{
+    background: orange;
+    border:solid 1px black;
+    float: right;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+
+#badge-suplente{
+    background: slateblue;
+    border:solid 1px black;
+    float: right;
+    text-align: center;
+    font-weight: 500;
+    color: black;
 }
