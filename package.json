@@ -1,0 +1,29 @@
+{
+  "name": "gran-dt",
+  "version": "1.0.0",
+  "description": "Pagina del juego Gran DT",
+  "main": "index.js",
+  "scripts": {
+    "server": "http-server",
+    "cypress-dev": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ulises-Berasain/gran-dt.git"
+  },
+  "author": "Ulises Berasain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ulises-Berasain/gran-dt/issues"
+  },
+  "homepage": "https://github.com/Ulises-Berasain/gran-dt#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "@types/cypress": "^1.1.3",
+    "@types/jquery": "^3.5.1",
+    "cypress": "^5.2.0"
+  }
+}

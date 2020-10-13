@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gran DT</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="./img/pelota.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <h1 id="titulo"><img src="img/la-liga.png" id="imagen-la-liga"> Gran DT</h1>
+    <div class="container" id="escudos">
+        <div class="row">
+            <h1 class="col-4">
+                <img src="./img/barcelona.png" id="imagen-barcelona">
+            </h1>
+            <h1 class="col-4">
+                <img src="./img/real-madrid.png" id="imagen-real-madrid">
+            </h1>
+            <h1 class="col-4">
+                <img src="./img/atletico-madrid.png" id="imagen-atletico-madrid">
+            </h1>
+        </div>
+    </div>
+        <label id="formaciones">Formaciones</label>
+        
+        <select name="formaciones" id="selector-formaciones">
+            <option>4-3-3</option>
+            <option>4-4-2</option>
+            <option>4-5-1</option>
+            <option>5-4-1</option>
+            <option>3-5-2</option>
+        </select>
+
+    <div class="container" id="contenedor">
+        <div id="contenedor-presupuesto">
+            <label class="presupuesto" id="presupuesto"><strong id="texto-presupuesto">Presupuesto</strong><p id="cantidad-presupuesto">80000000</p></label>
+        </div>
+        <div class="row" id="contenedor-listas">
+          <div class="col-4">
+            <div class="list-group" id="lista-jugadores">
+
+            </div>
+          </div>
+          <div class="col-4">
+            <div id="contenedor-lista-jugadores-elegidos">
+                <div class="list-group" id="contenedor-titulares">
+                    <p id="titulares">Titulares</p>
+                    <li class="list-group-item list-group-item-action" id="titular1"><button class="boton-eliminar" id="boton-eliminar1">X</button><p id="texto-titular1"></p><span class="badge titular1" id="badge-del">DEL</span></li>
+                    <li class="list-group-item list-group-item-action" id="titular2"><button class="boton-eliminar" id="boton-eliminar2">X</button><p id="texto-titular2"></p><span class="badge titular2" id="badge-del">DEL</span></li>
+                    <li class="list-group-item list-group-item-action" id="titular3"><button class="boton-eliminar" id="boton-eliminar3">X</button><p id="texto-titular3"></p><span class="badge titular3" id="badge-del">DEL</span></li>
+                    <li class="list-group-item list-group-item-action" id="titular4"><button class="boton-eliminar" id="boton-eliminar4">X</button><p id="texto-titular4"></p><span class="badge titular4" id="badge-med">MED</span></li>
+                    <li class="list-group-item list-group-item-action" id="titular5"><button class="boton-eliminar" id="boton-eliminar5">X</button><p id="texto-titular5"></p><span class="badge titular5" id="badge-med">MED</span></li>
+                    <li class="list-group-item list-group-item-action" id="titular6"><button class="boton-eliminar" id="boton-eliminar6">X</button><p id="texto-titular6"></p><span class="badge titular6" id="badge-med">MED</span></li>
+                    <li class="list-group-item list-group-item-action" id="titular7"><button class="boton-eliminar" id="boton-eliminar7">X</button><p id="texto-titular7"></p><span class="badge titular7" id="badge-def">DEF</span></li>
+                    <li class="list-group-item list-group-item-action" id="titular8"><button class="boton-eliminar" id="boton-eliminar8">X</button><p id="texto-titular8"></p><span class="badge titular8" id="badge-def">DEF</span></li>
+                    <li class="list-group-item list-group-item-action" id="titular9"><button class="boton-eliminar" id="boton-eliminar9">X</button><p id="texto-titular9"></p><span class="badge titular9" id="badge-def">DEF</span></li>
+                    <li class="list-group-item list-group-item-action" id="titular10"><button class="boton-eliminar" id="boton-eliminar10">X</button><p id="texto-titular10"></p><span class="badge titular10" id="badge-def">DEF</span></li>
+                    <li class="list-group-item list-group-item-action" id="titular11"><button class="boton-eliminar" id="boton-eliminar11">X</button><p id="texto-titular11"></p><span class="badge titular11" id="badge-arq">ARQ</span></li>
+                </div>
+                <div class="list-group" id="contenedor-suplentes">
+                <p id="suplentes">Suplentes</p>
+                    <li class="list-group-item list-group-item-action" id="suplente1"><button class="boton-eliminar" id="boton-eliminar12">X</button><p id="texto-suplente1"></p><span class="badge suplente1" id="badge-suplente">SUP</span></li>
+                    <li class="list-group-item list-group-item-action" id="suplente2"><button class="boton-eliminar" id="boton-eliminar13">X</button><p id="texto-suplente2"></p><span class="badge suplente2" id="badge-suplente">SUP</span></li>
+                    <li class="list-group-item list-group-item-action" id="suplente3"><button class="boton-eliminar" id="boton-eliminar14">X</button><p id="texto-suplente3"></p><span class="badge suplente3" id="badge-suplente">SUP</span></li>
+                    <li class="list-group-item list-group-item-action" id="suplente4"><button class="boton-eliminar" id="boton-eliminar15">X</button><p id="texto-suplente4"></p><span class="badge suplente4" id="badge-suplente">SUP</span></li>
+                    <li class="list-group-item list-group-item-action" id="suplente5"><button class="boton-eliminar" id="boton-eliminar16">X</button><p id="texto-suplente5"></p><span class="badge suplente5" id="badge-suplente">SUP</span></li>
+                </div>
+            </div>
+          </div>
+            <div class="col-4">
+                <div class="card" id="contenedor-cancha">
+                    <img src="./img/cancha.jpg"  class="rounded mx-auto d-block" alt="cancha" id="imagen-cancha">
+                    <img src="./img/silueta.png" class="silueta" alt="jugador" id="formacion1-del-centro">
+                    <img src="./img/silueta.png" class="silueta" alt="jugador" id="formacion1-del-derecho">
+                    <img src="./img/silueta.png" class="silueta" alt="jugador" id="formacion1-del-izquierdo">
+                    <img src="./img/silueta.png" class="silueta" alt="jugador" id="formacion1-med-centro">
+                    <img src="./img/silueta.png" class="silueta" alt="jugador" id="formacion1-med-derecho">
+                    <img src="./img/silueta.png" class="silueta" alt="jugador" id="formacion1-med-izquierdo">
+                    <img src="./img/silueta.png" class="silueta" alt="jugador" id="formacion1-def-derecho">
+                    <img src="./img/silueta.png" class="silueta" alt="jugador" id="formacion1-def-izquierdo">
+                    <img src="./img/silueta.png" class="silueta" alt="jugador" id="formacion1-def-central-derecho">
+                    <img src="./img/silueta.png" class="silueta" alt="jugador" id="formacion1-def-central-izquierdo">
+                    <img src="./img/silueta.png" class="silueta" alt="jugador" id="arq">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src='src/ui/main.js' type="module"></script>
+</body>
+</html>

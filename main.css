@@ -1,0 +1,711 @@
+body{
+    background-image: url(img/cesped.jpg);
+}
+
+h1{
+    background:rgb(17, 91, 17);
+}
+
+#cancha{
+    max-height: 2000px;
+}
+
+#jugadores{
+    background-repeat: no-repeat; 
+    background-size: 50px 50px; 
+    background-position: right;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#jugadores:hover{
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+#contenedor-cancha{
+    background-image: url(img/cesped.jpg);
+    width: 20rem;
+}
+
+#imagen-cancha{
+    border: solid 3px black;
+}
+
+#imagen-barcelona{
+    width: 320px; 
+    height: 200px;
+    margin-top: 1%;
+    margin-right: 20%;
+
+}
+
+#imagen-real-madrid{
+    margin-bottom: 1%;
+    margin-left: 10%;
+    width: 200px; 
+    height: 200px;
+}
+
+#imagen-atletico-madrid{
+    margin-top: 10%;
+    width: 125px; 
+    height: 150px;
+    margin-left: 5%;
+}
+
+#titulo{
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    text-decoration: underline;
+    -webkit-text-stroke: 2px black;
+    font-size: 75px;
+    border: solid 3px black;
+}
+
+#escudos{
+    border: solid 3px black;
+    background: rgb(17, 91, 17);
+}
+
+#imagen-la-liga{
+    width: 100px; 
+    height: 80px;
+}
+
+#formacion1-del-centro{
+    position:absolute;
+    margin-top: 25%;
+    margin-left: 115%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion1-del-derecho{
+    position:absolute;
+    margin-top: 40%;
+    margin-left: 185%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion1-del-izquierdo{
+    position:absolute;
+    margin-top: 40%;
+    margin-left: 45%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion1-med-centro{
+    position:absolute;
+    margin-top: 85%;
+    margin-left: 115%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion1-med-derecho{
+    position:absolute;
+    margin-top: 140%;
+    margin-left: 145%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion1-med-izquierdo{
+    position:absolute;
+    margin-top: 140%;
+    margin-left: 85%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion1-def-izquierdo{
+    position:absolute;
+    margin-top: 200%;
+    margin-left: 35%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion1-def-derecho{
+    position:absolute;
+    margin-top: 200%;
+    margin-left: 195%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion1-def-central-izquierdo{
+    position:absolute;
+    margin-top: 240%;
+    margin-left: 85%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion1-def-central-derecho{
+    position:absolute;
+    margin-top: 240%;
+    margin-left: 145%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion2-del-centro-derecho{
+    position:absolute;
+    width: 134px; 
+    height: 158px;
+    margin-top: 20%;
+    margin-left: 145%;
+}
+
+#formacion2-del-centro-izquierdo{
+    position:absolute;
+    width: 134px; 
+    height: 158px;
+    margin-top: 20%;
+    margin-left: 85%;
+}
+
+#formacion2-med-centro-derecho{
+    position:absolute;
+    width: 134px; 
+    height: 158px;
+    margin-top: 85%;
+    margin-left: 165%;
+}
+
+#formacion2-med-centro-izquierdo{
+    position:absolute;
+    width: 134px; 
+    height: 158px;
+    margin-top: 85%;
+    margin-left: 65%;
+}
+
+#formacion2-med-derecho{
+    position:absolute;
+    margin-top: 140%;
+    margin-left: 145%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion2-med-izquierdo{
+    position:absolute;
+    margin-top: 140%;
+    margin-left: 85%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion2-def-izquierdo{
+    position:absolute;
+    margin-top: 200%;
+    margin-left: 35%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion2-def-derecho{
+    position:absolute;
+    margin-top: 200%;
+    margin-left: 195%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion2-def-central-izquierdo{
+    position:absolute;
+    margin-top: 240%;
+    margin-left: 85%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion2-def-central-derecho{
+    position:absolute;
+    margin-top: 240%;
+    margin-left: 145%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion3-del-centro{
+    position:absolute;
+    margin-top: 25%;
+    margin-left: 115%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion3-med-centro{
+    position:absolute;
+    margin-top: 85%;
+    margin-left: 115%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion3-med-lateral-derecho{
+    position:absolute;
+    margin-top: 90%;
+    margin-left: 190%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion3-med-lateral-izquierdo{
+    position:absolute;
+    margin-top: 90%;
+    margin-left: 40%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion3-med-derecho{
+    position:absolute;
+    margin-top: 140%;
+    margin-left: 145%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion3-med-izquierdo{
+    position:absolute;
+    margin-top: 140%;
+    margin-left: 85%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion3-def-izquierdo{
+    position:absolute;
+    margin-top: 200%;
+    margin-left: 35%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion3-def-derecho{
+    position:absolute;
+    margin-top: 200%;
+    margin-left: 195%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion3-def-central-izquierdo{
+    position:absolute;
+    margin-top: 240%;
+    margin-left: 85%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion3-def-central-derecho{
+    position:absolute;
+    margin-top: 240%;
+    margin-left: 145%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion4-del-centro{
+    position:absolute;
+    margin-top: 25%;
+    margin-left: 115%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion4-med-centro-derecho{
+    position:absolute;
+    width: 134px; 
+    height: 158px;
+    margin-top: 85%;
+    margin-left: 165%;
+}
+
+#formacion4-med-centro-izquierdo{
+    position:absolute;
+    width: 134px; 
+    height: 158px;
+    margin-top: 85%;
+    margin-left: 65%;
+}
+
+#formacion4-med-derecho{
+    position:absolute;
+    margin-top: 140%;
+    margin-left: 145%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion4-med-izquierdo{
+    position:absolute;
+    margin-top: 140%;
+    margin-left: 85%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion4-def-izquierdo{
+    position:absolute;
+    margin-top: 195%;
+    margin-left: 30%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion4-def-derecho{
+    position:absolute;
+    margin-top: 195%;
+    margin-left: 200%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion4-def-central-izquierdo{
+    position:absolute;
+    margin-top: 215%;
+    margin-left: 70%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion4-def-central-derecho{
+    position:absolute;
+    margin-top: 215%;
+    margin-left: 160%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion4-def-central-medio{
+    position:absolute;
+    width: 134px; 
+    height: 158px;
+    margin-top: 225%;
+    margin-left: 115%;
+}
+
+#formacion5-del-centro-derecho{
+    position:absolute;
+    width: 134px; 
+    height: 158px;
+    margin-top: 20%;
+    margin-left: 145%;
+}
+
+#formacion5-del-centro-izquierdo{
+    position:absolute;
+    width: 134px; 
+    height: 158px;
+    margin-top: 20%;
+    margin-left: 85%;
+}
+
+#formacion5-med-centro{
+    position:absolute;
+    margin-top: 85%;
+    margin-left: 115%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion5-med-lateral-derecho{
+    position:absolute;
+    margin-top: 90%;
+    margin-left: 190%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion5-med-lateral-izquierdo{
+    position:absolute;
+    margin-top: 90%;
+    margin-left: 40%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion5-med-derecho{
+    position:absolute;
+    margin-top: 140%;
+    margin-left: 145%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion5-med-izquierdo{
+    position:absolute;
+    margin-top: 140%;
+    margin-left: 85%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion5-def-izquierdo{
+    position:absolute;
+    margin-top: 200%;
+    margin-left: 35%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion5-def-derecho{
+    position:absolute;
+    margin-top: 200%;
+    margin-left: 195%;
+    width: 134px; 
+    height: 158px;
+}
+
+#formacion5-def-central{
+    position:absolute;
+    width: 134px; 
+    height: 158px;
+    margin-top: 225%;
+    margin-left: 115%;
+}
+
+#arq{
+    position:absolute;
+    margin-top: 280%;
+    margin-left: 115%;
+    width: 134px; 
+    height: 158px;
+}
+
+#selector-formaciones{
+    margin-left: 50%;
+    font-weight: 700;
+    font-size: 100%;
+}
+
+#formaciones{
+    color:white;
+    margin-left: 50%;
+    margin-top: 1%;
+    font-weight: 700;
+    background: rgb(17, 91, 17);
+    font-size: 20px;
+    border: solid 3px black;
+}
+
+#presupuesto{
+    color: white;
+    background: rgb(17, 91, 17);
+    font-weight: 700;
+    border: solid 3px black;
+}
+
+#error{
+    color: white;
+    background: red;
+    font-weight: 700;
+    border: solid 3px black;
+}
+
+#boton-reinicio{
+    color: white;
+    font-weight: 700;
+    background: rgb(17, 91, 17);
+    transition : transform 0.5s ease;
+}
+
+#boton-reinicio:hover{
+    background-color: yellowgreen;
+    transform: scale(1.1);
+}
+
+#jugadores-seleccionados{
+    background-repeat: no-repeat; 
+    background-size: 50px 50px; 
+    background-position: right;
+    font-weight: 700;
+    color: white;
+    border: solid 1px black;
+    background-color: red;
+}
+
+#contenedor-listas{
+    display:flex;
+}
+
+#contenedor{
+    float: left;
+}
+
+#titular1{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular2{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular3{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular4{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;;
+}
+
+#titular5{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular6{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular7{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular8{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular9{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular10{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titular11{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#suplente1{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#suplente2{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#suplente3{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#suplente4{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#suplente5{
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
+}
+
+#titulares{
+    color: white;
+    background: rgb(17, 91, 17);
+    font-weight: 700;
+    border: solid 3px black;
+    text-align: center;
+}
+
+#suplentes{
+    margin-top: 5%;
+    color: white;
+    background: rgb(17, 91, 17);
+    font-weight: 700;
+    border: solid 3px black;
+    text-align: center;
+}
+
+.boton-eliminar{
+    float: left;
+    background: black;
+    color: white;
+}
+
+.boton-eliminar-deshabilitado{
+    display: none;
+}
+
+#badge-del{
+    background: crimson;
+    border:solid 1px black;
+    float: right;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+
+#badge-med{
+    background: aqua;
+    border:solid 1px black;
+    float: right;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+
+#badge-def{
+    background: greenyellow;
+    border:solid 1px black;
+    float: right;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+
+#badge-arq{
+    background: orange;
+    border:solid 1px black;
+    float: right;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+
+#badge-suplente{
+    background: slateblue;
+    border:solid 1px black;
+    float: right;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
