@@ -1,513 +1,102 @@
 body{
+    min-height: 100vh;
+    min-width: 100vw;
     background-image: url(img/cesped.jpg);
+    display: flex;
+    flex-wrap: wrap;
 }
 
-h1{
-    background:rgb(17, 91, 17);
-}
-
-#cancha{
-    max-height: 2000px;
-}
-
-#jugadores{
-    background-repeat: no-repeat; 
-    background-size: 50px 50px; 
-    background-position: right;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#jugadores:hover{
-    background-color: yellowgreen;
-    cursor: pointer;
-}
-
-#contenedor-cancha{
-    background-image: url(img/cesped.jpg);
-    width: 20rem;
-}
-
-#imagen-cancha{
+#contenedor-titulo{
+    display: flex;
+    flex-wrap: wrap;
+    background-image:radial-gradient(circle, rgb(19, 200, 19) ,rgb(17, 91, 17));
+    width: 300px;
     border: solid 3px black;
-}
-
-#imagen-barcelona{
-    width: 320px; 
-    height: 200px;
-    margin-top: 1%;
-    margin-right: 20%;
-
-}
-
-#imagen-real-madrid{
-    margin-bottom: 1%;
-    margin-left: 10%;
-    width: 200px; 
-    height: 200px;
-}
-
-#imagen-atletico-madrid{
-    margin-top: 10%;
-    width: 125px; 
-    height: 150px;
-    margin-left: 5%;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 #titulo{
-    text-align: center;
+    display: inline;
     font-weight: 700;
     color: white;
     text-decoration: underline;
     -webkit-text-stroke: 2px black;
-    font-size: 75px;
-    border: solid 3px black;
-}
-
-#escudos{
-    border: solid 3px black;
-    background: rgb(17, 91, 17);
+    font-size: 50px;
+    margin-left: 60px;
 }
 
 #imagen-la-liga{
-    width: 100px; 
-    height: 80px;
+    display: inline;
+    margin-top: 10px;
+    margin-left: 75px;
+    max-width: 50%;
 }
 
-#formacion1-del-centro{
-    position:absolute;
-    margin-top: 25%;
-    margin-left: 115%;
-    width: 134px; 
-    height: 158px;
+#contenedor-imagen-escudos{
+    border: solid 3px black;
+    background-image:radial-gradient(circle, rgb(19, 200, 19) ,rgb(17, 91, 17));
+    width: 310px;
+    margin-left: 7.5px;
+    margin-bottom: 10px;
 }
 
-#formacion1-del-derecho{
-    position:absolute;
-    margin-top: 40%;
-    margin-left: 185%;
-    width: 134px; 
-    height: 158px;
+#imagen-barcelona{
+    width: 96px; 
+    height: 60px;
+    margin-top: 10%;
+    margin-right: 20%;
 }
 
-#formacion1-del-izquierdo{
-    position:absolute;
-    margin-top: 40%;
-    margin-left: 45%;
-    width: 134px; 
-    height: 158px;
+#imagen-real-madrid{
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 65px; 
+    height: 60px;
 }
 
-#formacion1-med-centro{
-    position:absolute;
-    margin-top: 85%;
-    margin-left: 115%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion1-med-derecho{
-    position:absolute;
-    margin-top: 140%;
-    margin-left: 145%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion1-med-izquierdo{
-    position:absolute;
-    margin-top: 140%;
-    margin-left: 85%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion1-def-izquierdo{
-    position:absolute;
-    margin-top: 200%;
-    margin-left: 35%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion1-def-derecho{
-    position:absolute;
-    margin-top: 200%;
-    margin-left: 195%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion1-def-central-izquierdo{
-    position:absolute;
-    margin-top: 240%;
-    margin-left: 85%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion1-def-central-derecho{
-    position:absolute;
-    margin-top: 240%;
-    margin-left: 145%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion2-del-centro-derecho{
-    position:absolute;
-    width: 134px; 
-    height: 158px;
+#imagen-atletico-madrid{
     margin-top: 20%;
-    margin-left: 145%;
-}
-
-#formacion2-del-centro-izquierdo{
-    position:absolute;
-    width: 134px; 
-    height: 158px;
-    margin-top: 20%;
-    margin-left: 85%;
-}
-
-#formacion2-med-centro-derecho{
-    position:absolute;
-    width: 134px; 
-    height: 158px;
-    margin-top: 85%;
-    margin-left: 165%;
-}
-
-#formacion2-med-centro-izquierdo{
-    position:absolute;
-    width: 134px; 
-    height: 158px;
-    margin-top: 85%;
-    margin-left: 65%;
-}
-
-#formacion2-med-derecho{
-    position:absolute;
-    margin-top: 140%;
-    margin-left: 145%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion2-med-izquierdo{
-    position:absolute;
-    margin-top: 140%;
-    margin-left: 85%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion2-def-izquierdo{
-    position:absolute;
-    margin-top: 200%;
-    margin-left: 35%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion2-def-derecho{
-    position:absolute;
-    margin-top: 200%;
-    margin-left: 195%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion2-def-central-izquierdo{
-    position:absolute;
-    margin-top: 240%;
-    margin-left: 85%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion2-def-central-derecho{
-    position:absolute;
-    margin-top: 240%;
-    margin-left: 145%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion3-del-centro{
-    position:absolute;
-    margin-top: 25%;
-    margin-left: 115%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion3-med-centro{
-    position:absolute;
-    margin-top: 85%;
-    margin-left: 115%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion3-med-lateral-derecho{
-    position:absolute;
-    margin-top: 90%;
-    margin-left: 190%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion3-med-lateral-izquierdo{
-    position:absolute;
-    margin-top: 90%;
-    margin-left: 40%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion3-med-derecho{
-    position:absolute;
-    margin-top: 140%;
-    margin-left: 145%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion3-med-izquierdo{
-    position:absolute;
-    margin-top: 140%;
-    margin-left: 85%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion3-def-izquierdo{
-    position:absolute;
-    margin-top: 200%;
-    margin-left: 35%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion3-def-derecho{
-    position:absolute;
-    margin-top: 200%;
-    margin-left: 195%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion3-def-central-izquierdo{
-    position:absolute;
-    margin-top: 240%;
-    margin-left: 85%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion3-def-central-derecho{
-    position:absolute;
-    margin-top: 240%;
-    margin-left: 145%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion4-del-centro{
-    position:absolute;
-    margin-top: 25%;
-    margin-left: 115%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion4-med-centro-derecho{
-    position:absolute;
-    width: 134px; 
-    height: 158px;
-    margin-top: 85%;
-    margin-left: 165%;
-}
-
-#formacion4-med-centro-izquierdo{
-    position:absolute;
-    width: 134px; 
-    height: 158px;
-    margin-top: 85%;
-    margin-left: 65%;
-}
-
-#formacion4-med-derecho{
-    position:absolute;
-    margin-top: 140%;
-    margin-left: 145%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion4-med-izquierdo{
-    position:absolute;
-    margin-top: 140%;
-    margin-left: 85%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion4-def-izquierdo{
-    position:absolute;
-    margin-top: 195%;
-    margin-left: 30%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion4-def-derecho{
-    position:absolute;
-    margin-top: 195%;
-    margin-left: 200%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion4-def-central-izquierdo{
-    position:absolute;
-    margin-top: 215%;
-    margin-left: 70%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion4-def-central-derecho{
-    position:absolute;
-    margin-top: 215%;
-    margin-left: 160%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion4-def-central-medio{
-    position:absolute;
-    width: 134px; 
-    height: 158px;
-    margin-top: 225%;
-    margin-left: 115%;
-}
-
-#formacion5-del-centro-derecho{
-    position:absolute;
-    width: 134px; 
-    height: 158px;
-    margin-top: 20%;
-    margin-left: 145%;
-}
-
-#formacion5-del-centro-izquierdo{
-    position:absolute;
-    width: 134px; 
-    height: 158px;
-    margin-top: 20%;
-    margin-left: 85%;
-}
-
-#formacion5-med-centro{
-    position:absolute;
-    margin-top: 85%;
-    margin-left: 115%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion5-med-lateral-derecho{
-    position:absolute;
-    margin-top: 90%;
-    margin-left: 190%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion5-med-lateral-izquierdo{
-    position:absolute;
-    margin-top: 90%;
-    margin-left: 40%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion5-med-derecho{
-    position:absolute;
-    margin-top: 140%;
-    margin-left: 145%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion5-med-izquierdo{
-    position:absolute;
-    margin-top: 140%;
-    margin-left: 85%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion5-def-izquierdo{
-    position:absolute;
-    margin-top: 200%;
-    margin-left: 35%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion5-def-derecho{
-    position:absolute;
-    margin-top: 200%;
-    margin-left: 195%;
-    width: 134px; 
-    height: 158px;
-}
-
-#formacion5-def-central{
-    position:absolute;
-    width: 134px; 
-    height: 158px;
-    margin-top: 225%;
-    margin-left: 115%;
-}
-
-#arq{
-    position:absolute;
-    margin-top: 280%;
-    margin-left: 115%;
-    width: 134px; 
-    height: 158px;
-}
-
-#selector-formaciones{
-    margin-left: 50%;
-    font-weight: 700;
-    font-size: 100%;
+    width: 40px; 
+    height: 50px;
+    margin-left: 5%;
 }
 
 #formaciones{
+    text-align: center;
     color:white;
     margin-left: 50%;
     margin-top: 1%;
     font-weight: 700;
-    background: rgb(17, 91, 17);
-    font-size: 20px;
+    background-image:radial-gradient(circle, rgb(19, 200, 19) ,rgb(17, 91, 17));
+    font-size: 15px;
     border: solid 3px black;
+    min-width: 20vh;
+}
+
+#selector-formaciones{
+    margin-left: 50%;
+    margin-bottom: 5%;
+    font-weight: 700;
+    font-size: 100%;
+    max-width: 20vh;
+    min-width: 20vh;
+}
+
+#contenedor{
+    width: 320px;
 }
 
 #presupuesto{
     color: white;
-    background: rgb(17, 91, 17);
+    background-image:radial-gradient(circle, rgb(19, 200, 19) ,rgb(17, 91, 17));
     font-weight: 700;
     border: solid 3px black;
 }
 
 #error{
     color: white;
-    background: red;
+    background-image:radial-gradient(circle, red,crimson);
     font-weight: 700;
     border: solid 3px black;
 }
@@ -517,6 +106,7 @@ h1{
     font-weight: 700;
     background: rgb(17, 91, 17);
     transition : transform 0.5s ease;
+    margin-bottom: 5px;
 }
 
 #boton-reinicio:hover{
@@ -524,135 +114,71 @@ h1{
     transform: scale(1.1);
 }
 
-#jugadores-seleccionados{
+#lista-jugadores{
+    overflow:hidden; 
+    overflow-y:scroll;
+    max-height: 68.4rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#jugadores{
+    max-width: 140px;
     background-repeat: no-repeat; 
-    background-size: 50px 50px; 
-    background-position: right;
+    background-size: 40px 40px; 
+    background-position: right bottom;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: left;
+    border: solid 1px black;
+}
+
+#jugadores:hover{
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+#jugadores-seleccionados{
+    max-width: 140px;
+    background-repeat: no-repeat; 
+    background-size: 40px 40px; 
+    background-position: right bottom;
     font-weight: 700;
     color: white;
     border: solid 1px black;
     background-color: red;
 }
 
-#contenedor-listas{
-    display:flex;
-}
-
-#contenedor{
-    float: left;
-}
-
-#titular1{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#titular2{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#titular3{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#titular4{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;;
-}
-
-#titular5{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#titular6{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#titular7{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#titular8{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#titular9{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#titular10{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#titular11{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#suplente1{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#suplente2{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#suplente3{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#suplente4{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
-#suplente5{
-    text-align: center;
-    font-weight: 700;
-    border: solid 1px black;
-}
-
 #titulares{
     color: white;
-    background: rgb(17, 91, 17);
+    background-image:radial-gradient(circle, rgb(19, 200, 19) ,rgb(17, 91, 17));
     font-weight: 700;
     border: solid 3px black;
     text-align: center;
+}
+
+#contenedor-suplentes{
+    margin-bottom: 10px;
 }
 
 #suplentes{
-    margin-top: 5%;
+    margin-top: 1rem;
     color: white;
-    background: rgb(17, 91, 17);
+    background-image:radial-gradient(circle, rgb(19, 200, 19) ,rgb(17, 91, 17));
     font-weight: 700;
     border: solid 3px black;
     text-align: center;
+}
+
+#titular1, #titular2, #titular3, #titular4,
+#titular5, #titular6, #titular7,#titular8, 
+#titular9, #titular10, #titular11, #suplente1,
+#suplente2, #suplente3, #suplente4, #suplente5{
+    width: 140px;
+    min-width: 140px;
+    text-align: center;
+    font-weight: 700;
+    border: solid 1px black;
 }
 
 .boton-eliminar{
@@ -708,4 +234,1461 @@ h1{
     text-align: center;
     font-weight: 500;
     color: black;
+}
+
+.card{
+    background: none;
+}
+
+#contenedor-cancha{
+    position: relative;
+    min-width: 320px;
+    min-height: 420px;
+}
+
+#imagen-cancha{
+    border: solid 3px black;
+    max-width: 100%;
+    min-height: 420px;
+}
+
+#formacion1-del-centro{
+    position:absolute;
+    margin-top: 12%;
+    margin-left: 43%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion1-del-derecho{
+    position:absolute;
+    margin-top: 17.5%;
+    margin-left: 68%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion1-del-izquierdo{
+    position:absolute;
+    margin-top: 17.5%;
+    margin-left: 18%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion1-med-centro{
+    position:absolute;
+    margin-top: 33%;
+    margin-left: 43%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion1-med-derecho{
+    position:absolute;
+    margin-top: 54%;
+    margin-left: 55.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion1-med-izquierdo{
+    position:absolute;
+    margin-top: 54%;
+    margin-left: 32.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion1-def-derecho{
+    position:absolute;
+    margin-top: 78%;
+    margin-left: 73%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion1-def-izquierdo{
+    position:absolute;
+    margin-top: 78%;
+    margin-left: 15%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion1-def-central-derecho{
+    position:absolute;
+    margin-top: 95%;
+    margin-left: 55.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion1-def-central-izquierdo{
+    position:absolute;
+    margin-top: 95%;
+    margin-left: 32.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#arq{
+    position:absolute;
+    margin-top: 110%;
+    margin-left: 43%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion2-del-centro-derecho{
+    position:absolute;
+    margin-top: 10%;
+    margin-left: 55%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion2-del-centro-izquierdo{
+    position:absolute;
+    margin-top: 10%;
+    margin-left: 33%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion2-med-centro-derecho{
+    position:absolute;
+    margin-top: 35%;
+    margin-left: 60%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion2-med-centro-izquierdo{
+    position:absolute;
+    margin-top: 35%;
+    margin-left: 28%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion2-med-derecho{
+    position:absolute;
+    margin-top: 54%;
+    margin-left: 55.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion2-med-izquierdo{
+    position:absolute;
+    margin-top: 54%;
+    margin-left: 32.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion2-def-derecho{
+    position:absolute;
+    margin-top: 78%;
+    margin-left: 73%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion2-def-izquierdo{
+    position:absolute;
+    margin-top: 78%;
+    margin-left: 15%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion2-def-central-derecho{
+    position:absolute;
+    margin-top: 95%;
+    margin-left: 55.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion2-def-central-izquierdo{
+    position:absolute;
+    margin-top: 95%;
+    margin-left: 32.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion3-del-centro{
+    position:absolute;
+    margin-top: 12%;
+    margin-left: 43%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion3-med-centro{
+    position:absolute;
+    margin-top: 33%;
+    margin-left: 43%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion3-med-lateral-derecho{
+    position:absolute;
+    margin-top: 37.5%;
+    margin-left: 68%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion3-med-lateral-izquierdo{
+    position:absolute;
+    margin-top: 37.5%;
+    margin-left: 18%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion3-med-derecho{
+    position:absolute;
+    margin-top: 54%;
+    margin-left: 55.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion3-med-izquierdo{
+    position:absolute;
+    margin-top: 54%;
+    margin-left: 32.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion3-def-derecho{
+    position:absolute;
+    margin-top: 78%;
+    margin-left: 73%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion3-def-izquierdo{
+    position:absolute;
+    margin-top: 78%;
+    margin-left: 15%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion3-def-central-derecho{
+    position:absolute;
+    margin-top: 95%;
+    margin-left: 55.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion3-def-central-izquierdo{
+    position:absolute;
+    margin-top: 95%;
+    margin-left: 32.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion4-del-centro{
+    position:absolute;
+    margin-top: 12%;
+    margin-left: 43%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion4-med-centro-derecho{
+    position:absolute;
+    margin-top: 35.5%;
+    margin-left: 63%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion4-med-centro-izquierdo{
+    position:absolute;
+    position:absolute;
+    margin-top: 35.5%;
+    margin-left: 27%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion4-med-derecho{
+    position:absolute;
+    margin-top: 54%;
+    margin-left: 55.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion4-med-izquierdo{
+    position:absolute;
+    margin-top: 54%;
+    margin-left: 32.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion4-def-derecho{
+    position:absolute;
+    margin-top: 76%;
+    margin-left: 73%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion4-def-izquierdo{
+    position:absolute;
+    margin-top: 76%;
+    margin-left: 15%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion4-def-central-derecho{
+    position:absolute;
+    margin-top: 85%;
+    margin-left: 60%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion4-def-central-izquierdo{
+    position:absolute;
+    margin-top: 85%;
+    margin-left: 28%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+
+#formacion4-def-central-medio{
+    position:absolute;
+    margin-top: 90%;
+    margin-left: 45%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion5-del-centro-derecho{
+    position:absolute;
+    margin-top: 10%;
+    margin-left: 55%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion5-del-centro-izquierdo{
+    position:absolute;
+    margin-top: 10%;
+    margin-left: 33%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion5-med-centro{
+    position:absolute;
+    margin-top: 33%;
+    margin-left: 43%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion5-med-lateral-derecho{
+    position:absolute;
+    margin-top: 37.5%;
+    margin-left: 68%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion5-med-lateral-izquierdo{
+    position:absolute;
+    margin-top: 37.5%;
+    margin-left: 18%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion5-med-derecho{
+    position:absolute;
+    margin-top: 54%;
+    margin-left: 55.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion5-med-izquierdo{
+    position:absolute;
+    margin-top: 54%;
+    margin-left: 32.5%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion5-def-central{
+    position:absolute;
+    margin-top: 90%;
+    margin-left: 45%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion5-def-derecho{
+    position:absolute;
+    margin-top: 80%;
+    margin-left: 73%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+#formacion5-def-izquierdo{
+    position:absolute;
+    margin-top: 80%;
+    margin-left: 15%;
+    width: 44.66px; 
+    height: 52.66px;
+}
+
+@media screen and (min-width: 480px){
+    #contenedor-titulo{
+        min-width: 460px;
+        margin-bottom: 15px;
+        margin-left: 25%;
+    }
+
+    #titulo{
+        font-size: 50px;
+        margin-right: 45px;
+        margin-top: 10px;
+    }
+    
+    #imagen-la-liga{
+        margin-top: 15px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        max-width: 15%;
+    }
+
+    #contenedor-imagen-escudos{
+        min-width: 460px;
+        min-height: 150px;
+        margin-left: 25%;
+    }
+    
+    #imagen-barcelona{
+        width: 192px; 
+        height: 120px;
+    }
+    
+    #imagen-real-madrid{
+        width: 130px; 
+        height: 120px;
+    }
+    
+    #imagen-atletico-madrid{
+        width: 80px; 
+        height: 100px;
+    }
+
+    #contenedor-formaciones{
+        min-width: 480px;
+        margin-right: 50%;
+    }
+
+    #formaciones{
+        font-weight: 700;
+        font-size: 18px;
+        min-width: 25vh;
+    }
+
+    #selector-formaciones{
+        max-width: 25vh;
+        min-width: 25vh;
+    }
+
+    #contenedor{
+        min-width: 100vw;
+        min-height: 100vh;
+        margin-left: 5%;
+    }
+    
+    #contenedor-listas{
+        display:flex;
+        flex-wrap: wrap;
+        min-width: 480px;
+        width: 1399px;
+    }
+
+    #lista-jugadores{
+        overflow:hidden; 
+        overflow-y:scroll;
+        max-height: 68.4rem;
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+
+    #jugadores{
+        min-width: 240px;
+        background-size: 50px 50px; 
+    }
+
+    #jugadores-seleccionados{
+        min-width: 240px;
+        background-size: 50px 50px; 
+    }
+
+    #titular1, #titular2, #titular3, #titular4,
+    #titular5, #titular6, #titular7,#titular8, 
+    #titular9, #titular10, #titular11, #suplente1,
+    #suplente2, #suplente3, #suplente4, #suplente5{
+        width: 200px;
+        min-width: 200px;
+    }
+    
+    #contenedor-cancha{
+        position: relative;
+        min-width: 835px;
+        min-height: 1080px;
+        margin-left: 30px;
+    }
+
+    #imagen-cancha{
+        border: solid 3px black;
+        max-width: 100%;
+    }
+
+    #formacion1-del-centro{
+        position:absolute;
+        margin-top: 12%;
+        margin-left: 43%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-del-derecho{
+        position:absolute;
+        margin-top: 17.5%;
+        margin-left: 68%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-del-izquierdo{
+        position:absolute;
+        margin-top: 17.5%;
+        margin-left: 18%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-med-centro{
+        position:absolute;
+        margin-top: 33%;
+        margin-left: 43%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-med-derecho{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-med-izquierdo{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-def-derecho{
+        position:absolute;
+        margin-top: 78%;
+        margin-left: 73%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-def-izquierdo{
+        position:absolute;
+        margin-top: 78%;
+        margin-left: 15%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-def-central-derecho{
+        position:absolute;
+        margin-top: 95%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-def-central-izquierdo{
+        position:absolute;
+        margin-top: 95%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #arq{
+        position:absolute;
+        margin-top: 110%;
+        margin-left: 43%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-del-centro-derecho{
+        position:absolute;
+        margin-top: 10%;
+        margin-left: 55%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-del-centro-izquierdo{
+        position:absolute;
+        margin-top: 10%;
+        margin-left: 33%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-med-centro-derecho{
+        position:absolute;
+        margin-top: 35%;
+        margin-left: 60%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-med-centro-izquierdo{
+        position:absolute;
+        margin-top: 35%;
+        margin-left: 28%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-med-derecho{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-med-izquierdo{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-def-derecho{
+        position:absolute;
+        margin-top: 78%;
+        margin-left: 73%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-def-izquierdo{
+        position:absolute;
+        margin-top: 78%;
+        margin-left: 15%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-def-central-derecho{
+        position:absolute;
+        margin-top: 95%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-def-central-izquierdo{
+        position:absolute;
+        margin-top: 95%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-del-centro{
+        position:absolute;
+        margin-top: 12%;
+        margin-left: 43%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-med-centro{
+        position:absolute;
+        margin-top: 33%;
+        margin-left: 43%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-med-lateral-derecho{
+        position:absolute;
+        margin-top: 37.5%;
+        margin-left: 68%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-med-lateral-izquierdo{
+        position:absolute;
+        margin-top: 37.5%;
+        margin-left: 18%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-med-derecho{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-med-izquierdo{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-def-derecho{
+        position:absolute;
+        margin-top: 78%;
+        margin-left: 73%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-def-izquierdo{
+        position:absolute;
+        margin-top: 78%;
+        margin-left: 15%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-def-central-derecho{
+        position:absolute;
+        margin-top: 95%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-def-central-izquierdo{
+        position:absolute;
+        margin-top: 95%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-del-centro{
+        position:absolute;
+        margin-top: 12%;
+        margin-left: 43%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-med-centro-derecho{
+        position:absolute;
+        margin-top: 35.5%;
+        margin-left: 63%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-med-centro-izquierdo{
+        position:absolute;
+        position:absolute;
+        margin-top: 35.5%;
+        margin-left: 27%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-med-derecho{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-med-izquierdo{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-def-derecho{
+        position:absolute;
+        margin-top: 76%;
+        margin-left: 73%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-def-izquierdo{
+        position:absolute;
+        margin-top: 76%;
+        margin-left: 15%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-def-central-derecho{
+        position:absolute;
+        margin-top: 85%;
+        margin-left: 60%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-def-central-izquierdo{
+        position:absolute;
+        margin-top: 85%;
+        margin-left: 28%;
+        width: 134px; 
+        height: 158px;
+    }
+
+
+    #formacion4-def-central-medio{
+        position:absolute;
+        margin-top: 90%;
+        margin-left: 45%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-del-centro-derecho{
+        position:absolute;
+        margin-top: 10%;
+        margin-left: 55%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-del-centro-izquierdo{
+        position:absolute;
+        margin-top: 10%;
+        margin-left: 33%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-med-centro{
+        position:absolute;
+        margin-top: 33%;
+        margin-left: 43%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-med-lateral-derecho{
+        position:absolute;
+        margin-top: 37.5%;
+        margin-left: 68%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-med-lateral-izquierdo{
+        position:absolute;
+        margin-top: 37.5%;
+        margin-left: 18%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-med-derecho{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-med-izquierdo{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-def-central{
+        position:absolute;
+        margin-top: 90%;
+        margin-left: 45%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-def-derecho{
+        position:absolute;
+        margin-top: 80%;
+        margin-left: 73%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-def-izquierdo{
+        position:absolute;
+        margin-top: 80%;
+        margin-left: 15%;
+        width: 134px; 
+        height: 158px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    #contenedor-titulo{
+        width: 1200px;
+        margin-left: 15rem;
+        margin-top: 10px;
+    }
+    
+    #titulo{
+        font-size: 100px;
+        margin-left: 100px;
+    }
+    
+    #imagen-la-liga{
+        display: inline;
+        margin-top: 20px;
+        margin-left: 100px;
+        background-size: cover;
+    }
+
+    #contenedor-imagen-escudos{
+        width: 1400px;
+        margin-left: 17rem;
+        margin-bottom: 10px;
+    }
+    
+    #imagen-barcelona{
+        width: 320px; 
+        height: 200px;
+        margin-top: 10%;
+        margin-right: 15%;
+    }
+    
+    #imagen-real-madrid{
+        margin-top: 10%;
+        margin-left: 10%;
+        width: 200px; 
+        height: 200px;
+    }
+    
+    #imagen-atletico-madrid{
+        margin-top: 20%;
+        margin-left: 15%;
+        width: 125px; 
+        height: 150px;
+    }
+
+    #contenedor-formaciones{
+        min-width: 1200px;
+        margin-right: 50%;
+    }
+    
+    #formaciones{
+        margin-left: 50%;
+        margin-top: 1%;
+        font-size: 20px;
+        border: solid 3px black;
+    }
+
+    #contenedor{
+        min-width: 100vw;
+        min-height: 100vh;
+        margin-left: 10px;
+    }
+
+    #contenedor-presupuesto{
+        min-width: 105px;
+    }
+    
+    #contenedor-listas{
+        display:flex;
+        min-width: 1700px;
+        width: 100vw;
+    }
+        
+    #jugadores{
+        min-width: 350px;
+        background-size: 50px 50px; 
+        background-position: right;
+    }
+
+    #jugadores-seleccionados{
+        min-width: 350px;
+        background-size: 50px 50px; 
+        background-position: right;
+    }
+
+    #titular1, #titular2, #titular3, #titular4,
+    #titular5, #titular6, #titular7,#titular8, 
+    #titular9, #titular10, #titular11, #suplente1,
+    #suplente2, #suplente3, #suplente4, #suplente5{
+        width: 350px;
+        min-width: 350px;
+    }
+    
+    #contenedor-cancha{
+        position: relative;
+        min-width: 835px;
+        min-height: 1080px;
+        margin-left: 30px;
+    }
+ 
+    #formacion1-del-centro{
+        position:absolute;
+        margin-top: 12%;
+        margin-left: 43%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-del-derecho{
+        position:absolute;
+        margin-top: 17.5%;
+        margin-left: 68%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-del-izquierdo{
+        position:absolute;
+        margin-top: 17.5%;
+        margin-left: 18%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-med-centro{
+        position:absolute;
+        margin-top: 33%;
+        margin-left: 43%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-med-derecho{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-med-izquierdo{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-def-derecho{
+        position:absolute;
+        margin-top: 78%;
+        margin-left: 73%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-def-izquierdo{
+        position:absolute;
+        margin-top: 78%;
+        margin-left: 15%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-def-central-derecho{
+        position:absolute;
+        margin-top: 95%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion1-def-central-izquierdo{
+        position:absolute;
+        margin-top: 95%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #arq{
+        position:absolute;
+        margin-top: 110%;
+        margin-left: 43%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-del-centro-derecho{
+        position:absolute;
+        margin-top: 10%;
+        margin-left: 55%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-del-centro-izquierdo{
+        position:absolute;
+        margin-top: 10%;
+        margin-left: 33%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-med-centro-derecho{
+        position:absolute;
+        margin-top: 35%;
+        margin-left: 60%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-med-centro-izquierdo{
+        position:absolute;
+        margin-top: 35%;
+        margin-left: 28%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-med-derecho{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-med-izquierdo{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-def-derecho{
+        position:absolute;
+        margin-top: 78%;
+        margin-left: 73%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-def-izquierdo{
+        position:absolute;
+        margin-top: 78%;
+        margin-left: 15%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-def-central-derecho{
+        position:absolute;
+        margin-top: 95%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion2-def-central-izquierdo{
+        position:absolute;
+        margin-top: 95%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-del-centro{
+        position:absolute;
+        margin-top: 12%;
+        margin-left: 43%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-med-centro{
+        position:absolute;
+        margin-top: 33%;
+        margin-left: 43%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-med-lateral-derecho{
+        position:absolute;
+        margin-top: 37.5%;
+        margin-left: 68%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-med-lateral-izquierdo{
+        position:absolute;
+        margin-top: 37.5%;
+        margin-left: 18%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-med-derecho{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-med-izquierdo{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-def-derecho{
+        position:absolute;
+        margin-top: 78%;
+        margin-left: 73%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-def-izquierdo{
+        position:absolute;
+        margin-top: 78%;
+        margin-left: 15%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-def-central-derecho{
+        position:absolute;
+        margin-top: 95%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion3-def-central-izquierdo{
+        position:absolute;
+        margin-top: 95%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-del-centro{
+        position:absolute;
+        margin-top: 12%;
+        margin-left: 43%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-med-centro-derecho{
+        position:absolute;
+        margin-top: 35.5%;
+        margin-left: 63%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-med-centro-izquierdo{
+        position:absolute;
+        margin-top: 35.5%;
+        margin-left: 27%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-med-derecho{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-med-izquierdo{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-def-derecho{
+        position:absolute;
+        margin-top: 76%;
+        margin-left: 73%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-def-izquierdo{
+        position:absolute;
+        margin-top: 76%;
+        margin-left: 15%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-def-central-derecho{
+        position:absolute;
+        margin-top: 85%;
+        margin-left: 60%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion4-def-central-izquierdo{
+        position:absolute;
+        margin-top: 85%;
+        margin-left: 28%;
+        width: 134px; 
+        height: 158px;
+    }
+
+
+    #formacion4-def-central-medio{
+        position:absolute;
+        margin-top: 90%;
+        margin-left: 45%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-del-centro-derecho{
+        position:absolute;
+        margin-top: 10%;
+        margin-left: 55%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-del-centro-izquierdo{
+        position:absolute;
+        margin-top: 10%;
+        margin-left: 33%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-med-centro{
+        position:absolute;
+        margin-top: 33%;
+        margin-left: 43%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-med-lateral-derecho{
+        position:absolute;
+        margin-top: 37.5%;
+        margin-left: 68%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-med-lateral-izquierdo{
+        position:absolute;
+        margin-top: 37.5%;
+        margin-left: 18%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-med-derecho{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 55.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-med-izquierdo{
+        position:absolute;
+        margin-top: 54%;
+        margin-left: 32.5%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-def-central{
+        position:absolute;
+        margin-top: 90%;
+        margin-left: 45%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-def-derecho{
+        position:absolute;
+        margin-top: 80%;
+        margin-left: 73%;
+        width: 134px; 
+        height: 158px;
+    }
+
+    #formacion5-def-izquierdo{
+        position:absolute;
+        margin-top: 80%;
+        margin-left: 15%;
+        width: 134px; 
+        height: 158px;
+    }
+
 }
